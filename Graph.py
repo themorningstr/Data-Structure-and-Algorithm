@@ -154,13 +154,20 @@ class Graph:
 
 
 if __name__ == "__main__":
-    G = Graph(Vertices = 5)
-    G.matrix = [[0, 2, 0, 6, 0],
-                [2, 0, 3, 8, 5],
-                [0, 3, 0, 0, 7],
-                [6, 8, 0, 0, 9],
-                [0, 5, 7, 9, 0]]
-    G.PrimsMST()
+      G = Graph(Vertices = 5)
+      G.addEdge(1,3)
+      G.addEdge(4,3)
+      G.addEdge(2,3)
+      G.addEdge(1,4)
+      G.addEdge(2,4)
+      G.BreadthFirstSearch(2)
+    
+#     G.matrix = [[0, 2, 0, 6, 0],
+#                 [2, 0, 3, 8, 5],
+#                 [0, 3, 0, 0, 7],
+#                 [6, 8, 0, 0, 9],
+#                 [0, 5, 7, 9, 0]]
+#     G.PrimsMST()
     # G.KruskalEdge(0,1,10)
     # G.KruskalEdge(0,2,6)
     # G.KruskalEdge(0,3,5)
